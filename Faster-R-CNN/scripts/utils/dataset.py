@@ -7,11 +7,10 @@ from albumentations.pytorch import ToTensorV2
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset
-from munch import munchify
-# import kagglehub
+import kagglehub
 from dataclasses import dataclass
 # Download latest version
-# path = kagglehub.dataset_download("fareselmenshawii/face-detection-dataset")
+path = kagglehub.dataset_download("fareselmenshawii/face-detection-dataset")
 
 BASE_PATH= "/home/fenixkz/.cache/kagglehub/datasets/fareselmenshawii/face-detection-dataset/versions/3" 
 # The exact mean and std from the ResNet documentation
